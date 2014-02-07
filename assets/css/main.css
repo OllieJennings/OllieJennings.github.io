@@ -101,6 +101,7 @@ font-size: 100%; }
 
 
 .sh-contents {
+  text-shadow: black 0.1em 0.1em 0.2em;
   position: absolute;
   top: 0;
   width: 100%;
