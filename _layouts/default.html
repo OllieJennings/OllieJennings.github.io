@@ -17,7 +17,8 @@
 
     <header class="hd">
       <div class="hd-menu">
-        <i class="fa fa-bars fa-4x"></i>
+        <i class="show fa fa-bars fa-4x"></i>
+        <i class="fa fa-times fa-4x"></i>
       </div>
     </header>
 
@@ -29,5 +30,26 @@
 
     </section>
 
+    <script>
+      
+      var btn = document.getElementsByClassName('hd-menu')[0];
+      var barsBtn = document.getElementsByClassName('fa-bars')[0];
+      var timesBtn = document.getElementsByClassName('fa-times')[0];
+      var nav = document.getElementsByClassName('nav')[0];
+
+      btn.onclick = function () {
+        console.log('l was clicked');
+        if (barsBtn.classList.contains('show')) {
+          barsBtn.classList.remove('show');
+          timesBtn.classList.add('show');
+          nav.classList.add('expand');
+        } else {
+          timesBtn.classList.remove('show');
+          barsBtn.classList.add('show');
+          nav.classList.remove('expand');
+        }
+      };
+
+  </script>
   </body>
 </html>
