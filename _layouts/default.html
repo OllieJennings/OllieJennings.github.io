@@ -43,8 +43,9 @@
         -->
         <div class="n-btns">
           <ul class="nb-list">
-            <li class="nbl-opt"><a href="">
-                About Me<br/>
+            <li class="nbl-opt"><a href="/about">
+                About Me
+                <div class="subtext">Learn about my past and present</div>
             </a></li>
             <!--
             <li class="nbl-opt"><a href="">
@@ -63,68 +64,14 @@
         <div class="n-ftr">
           <div class="nf-copy">
             &copy; 2014 / Ollie Jennings<br/>
-            Say hi: <a href="">hola@olliejennings.co.uk</a>
+            Say hi: <a href="mailto:hola@olliejennings.co.uk">hola@olliejennings.co.uk</a>
           </div>
         </div>
     </nav>
 
     <section class="mc">
       <div class="mc-inner">
-        
-        <div class="mc-banner">
-          <div class="mcb-text">Analyst &amp; Developer</div>
-        </div>
-
-        <div class="mc-bio">
-          <img class="mcb-seal" src="assets/img/bathSeal.png" />
-          <div class="mcbio-text">
-            <div class="b-text">Graduated from University of Bath with a BSc in Computer Science, now working as an Analyst at Nomura International in London.</div>
-          </div>
-        </div>
-
-        <!-- Next section is workshops, with full image of a workshop as background of div then is shifted to a side with text on other side explaining workshops -->
-        <div class="mc-wksh">
-          <div class="wksh-overlay"></div>
-          <div class="wksh-text">
-            <div class="wksh-title">Do Less &nbsp; | &nbsp; Workshops</div>
-            <div class="wksh-desc">l do workshops on helping to create efficient developers with <a href="/">@Jack_Franklin</a>, we are currently looking to do internal workshops at companies.</div>
-            <div class="wksh-link">
-              <a href="http://do-less.co.uk">Visit Do Less</a>
-            </div>
-          </div>
-
-
-          <div class="mc-sm">
-            <div class="sm-title">Social Media</div>
-            <!--
-              Facebook
-              LinkedIn
-              Github
-              Twitter
-              Google + 
-              -->
-            
-              <a class="sm-item" href="/">
-                <i class="fa fa-facebook fa-3x"></i>
-                <div class="sm-desc">Where l post nonsense</div>
-              </a>
-              <a class="sm-item" href="/">
-                <i class="fa fa-twitter fa-3x"></i>
-                <div class="sm-desc">Where l post interesting things, l think</div>
-              </a>
-              <a class="sm-item" href="/">
-                <i class="fa fa-linkedin fa-3x"></i>
-                <div class="sm-desc">Where l act professional</div>
-              </a>
-              <a class="sm-item" href="/">
-                <i class="fa fa-google-plus fa-3x"></i>
-                <div class="sm-desc">Where no one sees anything l post</div>
-              </a>
-              <a class="sm-item" href="/">
-                <i class="fa fa-github fa-3x"></i>
-                <div class="sm-desc">Where my awful code belongs</div>
-              </a>
-          </div>
+        {{ content }}
       </div>
     </section>
 
@@ -139,7 +86,6 @@
       var nav = document.getElementsByClassName('nav')[0];
 
       btn.onclick = function () {
-        console.log('l was clicked');
         if (barsBtn.classList.contains('show')) {
           barsBtn.classList.remove('show');
           timesBtn.classList.add('show');
