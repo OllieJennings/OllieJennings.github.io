@@ -1,0 +1,21 @@
+// About content state
+
+// 1250
+@media only screen and (max-width: 1200px)
+  .ab-text
+    padding: 30px 40px 35px 240px
+    font-size: 30px
+
+
+// 1050
+@media only screen and (max-width: 1050px)
+  .ab-text
+    font-size: 22px
+    padding-top: 40px
+
+
+// 900
+@media only screen and (max-width: 900px)
+  .ab-text
+    font-family: 20px
+    line-height: 50px
