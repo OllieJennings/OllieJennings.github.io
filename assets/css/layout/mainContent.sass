@@ -1,19 +1,103 @@
-// Main Content Layout
-
-.mc
-  position: absolute
-  top: 0
-  bottom: 0
-  right: 0
-  left: 110px
-  overflow-y: auto
-  overflow-x: hidden
-  -webkit-overflow-scrolling: touch
-  background-color: $White
+// MainContent Layout
 
 
-.mc-inner
-  width: 100%
-  background-color: $White
-  min-height: 100px
-  overflow: hidden
+.mainContent
+  height: auto
+  margin: 0 auto
+  min-height: 100%
+  width: 94%
+  max-width: 1300px
+  padding: 100px 0
+
+
+.clearfix:before,
+.clearfix:after
+  content: ""
+  display: table
+
+
+.box
+  float: left
+  margin-left: 8.5%
+  width: 85%
+  clear: both
+
+.box.below
+  // border-bottom: 1px solid $Gray
+
+.logo
+  width: 78px
+  height: auto
+  float: left
+  // margin-left: 8.5%
+  clear: none
+
+
+.logoText
+  width: 78%
+  font-size: 64px
+  font-family: $pFont
+  line-height: 1.3em
+  min-height: 119px
+  margin-left: 19%
+  font-weight: 100
+  clear: none
+  color: $Blue
+  padding-bottom: 50px
+
+.sideText
+  float: left
+  font-size: 14px
+  font-family: $sFont
+  text-transform: uppercase
+  min-height: 16px
+  width: 14.5%
+  clear: both
+  margin-top: 42px
+  color: darken($Gray, 30%)
+
+.sideContents
+  float: left
+  width: 80.5%
+  clear: none
+  margin-top: 42px
+  margin-left: 2%
+  padding-bottom: 50px
+
+.image
+  float: left
+  width: 18.25%
+  max-width: 100%
+  height: auto
+  margin-left: 3%
+  display: block
+
+.text
+  margin-left: 3%
+  padding-bottom: 1em
+  font-family: $pFont
+  font-size: 18px
+  color: rgba(100, 100, 100, 1)
+
+.text a:hover
+  color: $Blue
+
+
+@media only screen and (max-width: 900px)
+  .logoText
+    font-size: 40px
+
+
+@media only screen and (max-width: 600px)
+  .logoText
+    margin-top: 100px
+    margin-left: 0px
+    font-size: 30px
+
+  .sideText
+    width: 100%
+
+  .image
+    width: 33%
+
+
